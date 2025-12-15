@@ -177,7 +177,7 @@ body {
 
 .subtitle {
     font-family: 'Edu NSW ACT Foundation', cursive;;
-    font-size: 1.0rem;
+    font-size: 1.2rem;
     color: var(--primary-green);
     margin-bottom: 0.6rem;
     font-weight: 600;
@@ -192,11 +192,11 @@ body {
 }
 
 .lab-link:hover {
-    color: var(--dark-green);
+    color: var(--dark-gray);
     border-bottom: 1px solid var(--primary-green);
 }
 .tagline {
-    margin-bottom: 0.3rem;
+    margin-bottom: 0.2rem;
 }
 
 .role-text {
