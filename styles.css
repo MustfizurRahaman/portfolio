@@ -8,7 +8,7 @@
     --light-green: #D4E4DD;          /* Very light sage */
     --dark-green: #556B61;           /* Dark sage */
     --very-light-green: #F5FAF8;     /* Almost white with hint of green */
-    /* --white: #f8f8f8; */
+    --white: #f8f8f8; 
     --white: #ecfae5;
     --light-gray: #f8f9fa;
     --dark-gray: #303030;
@@ -403,7 +403,7 @@ section {
 
 /* Education Section */
 .education {
-    background-color: var(--light-gray);
+    background-color: var(--light-cream);
 }
 
 .timeline {
@@ -484,7 +484,7 @@ section {
 
 /* Publications Section - List Style */
 .publications {
-    background-color: var(--white);
+    background-color: var(--light-cream);
 }
 
 .publications-list {
@@ -561,7 +561,7 @@ section {
 }
 /* Experience Section */
 .experience {
-    background-color: var(--light-gray);
+    background-color: var(--light-cream);
 }
 
 .experience-timeline {
@@ -656,7 +656,7 @@ section {
 
 /* Projects Section */
 .projects {
-    background-color: var(--white);
+    background-color: var(--light-cream);
 }
 
 .projects-grid {
@@ -666,7 +666,7 @@ section {
 }
 
 .project-card {
-    background-color: var(--very-light-green);
+    background-color: var(--white);
     padding: 2rem;
     border-radius: 10px;
     box-shadow: var(--shadow);
@@ -689,7 +689,7 @@ section {
 
 .project-icon {
     font-size: 2rem;
-    color: var(--primary-green);
+    color: var(--duke_blue);
 }
 
 .project-card h3 {
@@ -721,7 +721,7 @@ section {
 }
 
 .project-link {
-    color: var(--primary-green);
+    color: var(--duke_blue);
     text-decoration: none;
     font-weight: 600;
     display: inline-flex;
@@ -731,12 +731,12 @@ section {
 }
 
 .project-link:hover {
-    color: var(--dark-green);
+    color: var(--duke_blue);
 }
 
 /* Skills Section */
 .skills {
-    background-color: var(--light-gray);
+    background-color: var(--light-cream);
 }
 
 .skills-grid {
