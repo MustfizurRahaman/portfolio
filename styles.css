@@ -60,12 +60,15 @@ body {
 }
 
 .nav-brand {
+    font-family: 'Edu NSW ACT Foundation', cursive;
     font-size: 1.5rem;
     font-weight: bold;
     color: var(--primary-green);
 }
 
 .nav-menu {
+    
+    font-size: 1.2rem;
     display: flex;
     font-weight: bold;
     list-style: none;
@@ -165,7 +168,7 @@ body {
 }
 
 .name-title {
-    font-family: 'Edu NSW ACT Foundation', cursive;
+    font-family: 'Tahoma', sans-serif;
     font-size: 2.5rem;
     color: var(--dark-gray);
     margin-bottom: 0.5rem;
@@ -304,15 +307,15 @@ body {
 }
 
 .animated-text.delay-1 {
-    animation-delay: 0.2s;
-}
-
-.animated-text.delay-2 {
     animation-delay: 0.4s;
 }
 
-.animated-text.delay-3 {
+.animated-text.delay-2 {
     animation-delay: 0.6s;
+}
+
+.animated-text.delay-3 {
+    animation-delay: 0.8s;
 }
 
 /* Research Interests Inline */
@@ -344,7 +347,7 @@ body {
     padding: 0.5rem 1rem;
     border-radius: 25px;
     font-size: 0.9rem;
-    font-weight: 500;
+    font-weight: 700;
     transition: all 0.3s ease;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
