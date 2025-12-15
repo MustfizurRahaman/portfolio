@@ -1,9 +1,9 @@
 /* Global Styles */
 :root {
-    --primary-green: #2ecc71;
-    --light-green: #a8e6cf;
-    --dark-green: #27ae60;
-    --very-light-green: #e8f8f5;
+    --primary-green: #6B8E7F;        /* Muted sage green */
+    --light-green: #D4E4DD;          /* Very light sage */
+    --dark-green: #556B61;           /* Dark sage */
+    --very-light-green: #F5FAF8;     /* Almost white with hint of green */
     --white: #ffffff;
     --light-gray: #f8f9fa;
     --dark-gray: #2c3e50;
@@ -142,7 +142,7 @@ body {
     max-width: 350px;
     height: auto;
     border-radius: 15px;
-    box-shadow: 0 20px 60px rgba(46, 204, 113, 0.3);
+    box-shadow: 0 20px 60px rgba(107, 142, 127, 0.3);
     border: 4px solid var(--white);
     object-fit: cover;
     transition: all 0.4s ease;
@@ -150,7 +150,7 @@ body {
 
 .profile-img:hover {
     transform: translateY(-10px) scale(1.02);
-    box-shadow: 0 30px 80px rgba(46, 204, 113, 0.4);
+    box-shadow: 0 30px 80px rgba(107, 142, 127, 0.4);
 }
 
 .intro-text {
@@ -344,7 +344,7 @@ body {
     background-color: var(--primary-green);
     color: var(--white);
     transform: translateY(-3px);
-    box-shadow: 0 4px 8px rgba(46, 204, 113, 0.3);
+    box-shadow: 0 4px 8px rgba(107, 142, 127, 0.3);
 }
 
 /* Section Styles */
@@ -766,6 +766,7 @@ section {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    width: 100%;
 }
 
 .contact-item {
@@ -803,46 +804,6 @@ section {
     text-decoration: underline;
 }
 
-.references h3 {
-    color: var(--primary-green);
-    margin-bottom: 1.5rem;
-    font-size: 1.5rem;
-}
-
-.reference-card {
-    background-color: var(--very-light-green);
-    padding: 1.5rem;
-    border-radius: 10px;
-    margin-bottom: 1rem;
-    transition: all 0.3s ease;
-}
-
-.reference-card:hover {
-    transform: translateX(5px);
-    box-shadow: var(--shadow);
-}
-
-.reference-card h4 {
-    color: var(--dark-gray);
-    margin-bottom: 0.5rem;
-}
-
-.reference-card p {
-    color: var(--text-color);
-    font-size: 0.95rem;
-    margin-bottom: 0.3rem;
-}
-
-.reference-card a {
-    color: var(--primary-green);
-    text-decoration: none;
-    font-weight: 500;
-}
-
-.reference-card a:hover {
-    text-decoration: underline;
-}
-
 /* Footer */
 .footer {
     background-color: var(--dark-gray);
@@ -872,7 +833,34 @@ section {
     color: var(--primary-green);
 }
 
+/* Section Switching */
+.content-section {
+    min-height: 100vh;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Active nav link styling */
+.nav-link.active {
+    color: var(--primary-green);
+    font-weight: 700;
+}
+
+.nav-link.active::after {
+    width: 100%;
+}
+
 /* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -1022,7 +1010,7 @@ section {
     }
 
     .contact-content {
-        grid-template-columns: 1fr;
+        max-width: 100%;
     }
 
     .footer .container {
