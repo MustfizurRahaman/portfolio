@@ -68,7 +68,7 @@ body {
 
 .nav-menu {
     
-    font-size: 1.2rem;
+    font-size: 1.0rem;
     display: flex;
     font-weight: bold;
     list-style: none;
@@ -176,8 +176,8 @@ body {
 }
 
 .subtitle {
-    font-family: 'Gelasio', sans-serif;
-    font-size: 1.3rem;
+    font-family: 'Tahoma', sans-serif;
+    font-size: 1.2rem;
     color: var(--primary-green);
     margin-bottom: 0.8rem;
     font-weight: 600;
