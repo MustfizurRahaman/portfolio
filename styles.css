@@ -13,6 +13,7 @@
     --dark-gray: #2c3e50;
     --text-color: #0a0a0a;
     --border-color: #e0e0e0;
+    --green-earth: #DADD98:
     --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
@@ -42,7 +43,7 @@ body {
 
 /* Navigation */
 .navbar {
-    background-color: var(--white);
+    background-color: var(--green-earth);
     box-shadow: var(--shadow);
     position: fixed;
     width: 100%;
