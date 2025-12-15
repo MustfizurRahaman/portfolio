@@ -183,6 +183,18 @@ body {
     font-weight: 600;
 }
 
+.lab-link {
+    color: var(--primary-green);
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid transparent;
+}
+
+.lab-link:hover {
+    color: var(--dark-green);
+    border-bottom: 1px solid var(--primary-green);
+}
 .tagline {
     margin-bottom: 0.3rem;
 }
