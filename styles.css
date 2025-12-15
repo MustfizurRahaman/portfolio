@@ -35,7 +35,7 @@ body {
     font-family: 'Tahoma', Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: var(--text-color);
-    background-color: var(--light-cream);
+    background-color: var(--white);
 }
 
 .container {
