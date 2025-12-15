@@ -107,59 +107,103 @@ body {
     transition: all 0.3s ease;
 }
 
-/* Hero Section */
-.hero {
+/* Hero-About Combined Section */
+.hero-about {
     background: linear-gradient(135deg, var(--very-light-green) 0%, var(--white) 100%);
-    padding: 150px 0 100px;
+    padding: 120px 0 80px;
     min-height: 100vh;
     display: flex;
     align-items: center;
 }
 
-.hero-content {
+.hero-about-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 40px;
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 5rem;
+    align-items: start;
 }
 
-.hero-title {
-    font-size: 3.5rem;
-    color: var(--dark-gray);
-    margin-bottom: 1rem;
-    animation: fadeInUp 0.8s ease;
+/* Left Side - Profile & Intro */
+.hero-left {
+    position: sticky;
+    top: 120px;
 }
 
-.hero-subtitle {
-    font-size: 1.8rem;
-    color: var(--primary-green);
-    margin-bottom: 1rem;
-    animation: fadeInUp 0.8s ease 0.2s;
-    animation-fill-mode: both;
-}
-
-.hero-description {
-    font-size: 1.2rem;
-    color: var(--text-color);
+.profile-image-wrapper {
     margin-bottom: 2rem;
-    animation: fadeInUp 0.8s ease 0.4s;
+    animation: fadeInLeft 0.8s ease;
+}
+
+.profile-img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 20px 60px rgba(46, 204, 113, 0.3);
+    border: 4px solid var(--white);
+    object-fit: cover;
+    transition: all 0.4s ease;
+}
+
+.profile-img:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 30px 80px rgba(46, 204, 113, 0.4);
+}
+
+.intro-text {
+    animation: fadeInLeft 0.8s ease 0.2s;
     animation-fill-mode: both;
+}
+
+.name-title {
+    font-size: 2.5rem;
+    color: var(--dark-gray);
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.subtitle {
+    font-size: 1.3rem;
+    color: var(--primary-green);
+    margin-bottom: 0.8rem;
+    font-weight: 600;
+}
+
+.tagline {
+    margin-bottom: 0.3rem;
+}
+
+.role-text {
+    color: var(--text-color);
+    font-size: 1rem;
+    display: block;
+}
+
+.affiliation {
+    color: var(--dark-gray);
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
 }
 
 .hero-buttons {
     display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
-    margin-bottom: 2rem;
-    animation: fadeInUp 0.8s ease 0.6s;
-    animation-fill-mode: both;
+    margin-bottom: 1.5rem;
 }
 
 .btn {
-    padding: 12px 30px;
+    padding: 12px 28px;
     border-radius: 50px;
     text-decoration: none;
     font-weight: 600;
     transition: all 0.3s ease;
     display: inline-block;
+    font-size: 0.95rem;
 }
 
 .btn-primary {
@@ -189,13 +233,11 @@ body {
 .social-links {
     display: flex;
     gap: 1rem;
-    animation: fadeInUp 0.8s ease 0.8s;
-    animation-fill-mode: both;
 }
 
 .social-links a {
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
     background-color: var(--white);
     color: var(--primary-green);
@@ -203,7 +245,7 @@ body {
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     transition: all 0.3s ease;
     box-shadow: var(--shadow);
 }
@@ -213,6 +255,96 @@ body {
     color: var(--white);
     transform: translateY(-5px);
     box-shadow: var(--shadow-lg);
+}
+
+/* Right Side - About Description */
+.hero-right {
+    animation: fadeInRight 0.8s ease 0.4s;
+    animation-fill-mode: both;
+}
+
+.about-title {
+    font-size: 2.2rem;
+    color: var(--primary-green);
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+.about-description {
+    margin-bottom: 2rem;
+}
+
+.about-description p {
+    margin-bottom: 1.3rem;
+    line-height: 1.8;
+    font-size: 1.05rem;
+    text-align: justify;
+    color: var(--text-color);
+}
+
+.about-description strong {
+    color: var(--primary-green);
+    font-weight: 600;
+}
+
+/* Animated text */
+.animated-text {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+.animated-text.delay-1 {
+    animation-delay: 0.2s;
+}
+
+.animated-text.delay-2 {
+    animation-delay: 0.4s;
+}
+
+.animated-text.delay-3 {
+    animation-delay: 0.6s;
+}
+
+/* Research Interests Inline */
+.research-interests-inline {
+    background-color: var(--very-light-green);
+    padding: 1.8rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+}
+
+.research-interests-inline h3 {
+    color: var(--primary-green);
+    margin-bottom: 1.2rem;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.interests-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+}
+
+.interest-tag {
+    background-color: var(--white);
+    color: var(--dark-gray);
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.interest-tag:hover {
+    background-color: var(--primary-green);
+    color: var(--white);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(46, 204, 113, 0.3);
 }
 
 /* Section Styles */
@@ -238,51 +370,6 @@ section {
     left: 50%;
     transform: translateX(-50%);
     border-radius: 2px;
-}
-
-/* About Section */
-.about {
-    background-color: var(--white);
-}
-
-.about-content {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 3rem;
-    align-items: start;
-}
-
-.about-text p {
-    margin-bottom: 1.5rem;
-    line-height: 1.8;
-    text-align: justify;
-}
-
-.research-interests {
-    background-color: var(--very-light-green);
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: var(--shadow);
-}
-
-.research-interests h3 {
-    color: var(--primary-green);
-    margin-bottom: 1rem;
-    font-size: 1.5rem;
-}
-
-.research-interests ul {
-    list-style: none;
-}
-
-.research-interests li {
-    margin-bottom: 0.8rem;
-    color: var(--text-color);
-}
-
-.research-interests i {
-    color: var(--primary-green);
-    margin-right: 0.5rem;
 }
 
 /* Education Section */
@@ -796,7 +883,75 @@ section {
     }
 }
 
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
 /* Responsive Design */
+@media (max-width: 992px) {
+    .hero-about-container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        padding: 0 20px;
+    }
+
+    .hero-left {
+        position: relative;
+        top: 0;
+    }
+
+    .profile-img {
+        max-width: 280px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .name-title {
+        font-size: 2.2rem;
+        text-align: center;
+    }
+
+    .subtitle {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .tagline, .affiliation {
+        text-align: center;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+    .about-title {
+        font-size: 2rem;
+        text-align: center;
+    }
+}
+
 @media (max-width: 768px) {
     .nav-menu {
         position: fixed;
@@ -820,20 +975,24 @@ section {
         display: flex;
     }
 
-    .hero-title {
-        font-size: 2.5rem;
+    .hero-about {
+        padding: 100px 0 60px;
     }
 
-    .hero-subtitle {
-        font-size: 1.5rem;
+    .name-title {
+        font-size: 2rem;
     }
 
-    .hero-buttons {
-        flex-direction: column;
+    .subtitle {
+        font-size: 1.1rem;
     }
 
-    .about-content {
-        grid-template-columns: 1fr;
+    .about-title {
+        font-size: 1.8rem;
+    }
+
+    .about-description p {
+        font-size: 1rem;
     }
 
     .timeline::before,
@@ -876,12 +1035,12 @@ section {
 }
 
 @media (max-width: 480px) {
-    .hero-title {
-        font-size: 2rem;
+    .name-title {
+        font-size: 1.8rem;
     }
 
-    .hero-subtitle {
-        font-size: 1.2rem;
+    .subtitle {
+        font-size: 1rem;
     }
 
     .btn {
@@ -895,5 +1054,9 @@ section {
 
     .skills-grid {
         grid-template-columns: 1fr;
+    }
+
+    .profile-img {
+        max-width: 220px;
     }
 }
