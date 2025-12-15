@@ -196,7 +196,7 @@ body {
 
 .lab-link:hover {
     color: var(--dark-gray);
-    border-bottom: 1px solid var(--primary-green);
+    border-bottom: 1px solid var(--duke_blue);
 }
 .tagline {
     margin-bottom: 0.2rem;
