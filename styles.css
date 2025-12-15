@@ -480,71 +480,83 @@ section {
     color: var(--text-color);
 }
 
-/* Publications Section */
+/* Publications Section - List Style */
 .publications {
     background-color: var(--white);
 }
 
-.publications-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+.publications-list {
+    max-width: 900px;
+    margin: 0 auto;
 }
 
-.publication-card {
-    background-color: var(--white);
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: var(--shadow);
+.publication-item {
+    padding: 2rem 0;
+    border-bottom: 2px solid var(--border-color);
     transition: all 0.3s ease;
-    border-left: 4px solid var(--primary-green);
 }
 
-.publication-card:hover {
-    transform: translateY(-5px);
-    box-shadow: var(--shadow-lg);
+.publication-item:last-child {
+    border-bottom: none;
 }
 
-.publication-icon {
-    font-size: 2.5rem;
-    color: var(--primary-green);
-    margin-bottom: 1rem;
+.publication-item:hover {
+    padding-left: 1rem;
+    background-color: var(--very-light-green);
+    margin-left: -1rem;
+    margin-right: -1rem;
+    padding-right: 1rem;
+    border-radius: 8px;
 }
 
-.publication-card h3 {
+.pub-title {
     color: var(--dark-gray);
     font-size: 1.2rem;
-    margin-bottom: 1rem;
-    line-height: 1.4;
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+    line-height: 1.5;
 }
 
-.authors {
+.pub-authors {
     color: var(--text-color);
     font-size: 0.95rem;
     margin-bottom: 0.5rem;
+    line-height: 1.6;
 }
 
-.venue {
+.pub-authors strong {
     color: var(--primary-green);
     font-weight: 600;
-    margin-bottom: 1rem;
-    font-size: 0.9rem;
 }
 
-.publication-link {
+.pub-venue {
+    color: var(--primary-green);
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+    font-style: italic;
+}
+
+.pub-link {
     color: var(--primary-green);
     text-decoration: none;
+    font-size: 0.9rem;
     font-weight: 600;
     display: inline-flex;
     align-items: center;
-    gap: 0.5rem;
-    transition: color 0.3s ease;
+    gap: 0.4rem;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid transparent;
 }
 
-.publication-link:hover {
+.pub-link:hover {
     color: var(--dark-green);
+    border-bottom: 1px solid var(--primary-green);
 }
 
+.pub-link i {
+    font-size: 0.85rem;
+}
 /* Experience Section */
 .experience {
     background-color: var(--light-gray);
