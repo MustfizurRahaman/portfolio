@@ -1,5 +1,8 @@
 /* Global Styles */
 @import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+@import url('fonts.googleapis.com');
+
 :root {
     --primary-green: #4A5D23;        /* Muted sage green */
     --light-green: #D4E4DD;          /* Very light sage */
@@ -25,7 +28,7 @@ html {
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Inter', Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: var(--text-color);
     background-color: var(--white);
@@ -63,6 +66,7 @@ body {
 
 .nav-menu {
     display: flex;
+    font-weight: bold;
     list-style: none;
     gap: 2rem;
 }
@@ -168,6 +172,7 @@ body {
 }
 
 .subtitle {
+    font-family: 'Gelasio', sans-serif;
     font-size: 1.3rem;
     color: var(--primary-green);
     margin-bottom: 0.8rem;
@@ -252,7 +257,7 @@ body {
     box-shadow: var(--shadow);
 }
 
-.social-links a:hover {
+.social-links a: hover {
     background-color: var(--primary-green);
     color: var(--white);
     transform: translateY(-5px);
@@ -266,8 +271,9 @@ body {
 }
 
 .about-title {
+    
     font-size: 2.2rem;
-    color: var(--primary-green);
+    color: var(--dark-gray);
     margin-bottom: 1.5rem;
     font-weight: 700;
 }
