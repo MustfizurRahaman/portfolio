@@ -14,7 +14,6 @@
             <div class="nav-brand">Mustafizur Rahaman</div>
             <ul class="nav-menu">
                 <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
                 <li><a href="#education" class="nav-link">Education</a></li>
                 <li><a href="#publications" class="nav-link">Publications</a></li>
                 <li><a href="#experience" class="nav-link">Experience</a></li>
@@ -30,53 +29,66 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1 class="hero-title">Mustafizur Rahaman</h1>
-                <h2 class="hero-subtitle">MSc. Student in Geographic Information Science</h2>
-                <p class="hero-description">PhD Researcher | Deep Learning | Remote Sensing | GeoAI</p>
-                <div class="hero-buttons">
-                    <a href="#contact" class="btn btn-primary">Get in Touch</a>
-                    <a href="assets/CV.pdf" class="btn btn-secondary" download>Download CV</a>
+    <!-- Hero/About Combined Section -->
+    <section id="home" class="hero-about">
+        <div class="hero-about-container">
+            <!-- Left Side: Image + Intro -->
+            <div class="hero-left">
+                <div class="profile-image-wrapper">
+                    <img src="assets/profile.jpg" alt="Mustafizur Rahaman" class="profile-img">
                 </div>
-                <div class="social-links">
-                    <a href="mailto:mustafiz0905@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a>
-                    <a href="https://github.com/MustfizurRahaman" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-                    <a href="https://sites.google.com/view/mustafizur" target="_blank" title="Google Sites"><i class="fas fa-globe"></i></a>
-                    <a href="https://scholar.google.com" target="_blank" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+                <div class="intro-text">
+                    <h1 class="name-title">Mustafizur Rahaman</h1>
+                    <h2 class="subtitle">MSc. in Geographic Information Science</h2>
+                    <p class="tagline">
+                        <span class="role-text">Research Assistant @ Taylor Geospatial Institute</span>
+                    </p>
+                    <p class="affiliation">Saint Louis University</p>
+                    
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">Get in Touch</a>
+                        <a href="assets/CV.pdf" class="btn btn-secondary" download>Download CV</a>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="mailto:mustafiz0905@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="https://github.com/MustfizurRahaman" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://sites.google.com/view/mustafizur" target="_blank" title="Google Sites"><i class="fas fa-globe"></i></a>
+                        <a href="https://scholar.google.com" target="_blank" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>
-                        Greetings! I am Mustafizur Rahaman, a dedicated researcher and MSc. student in Geographic Information Science at Saint Louis University, specializing in GeoAI. I am currently working as a Research Assistant at the Taylor Geospatial Institute under the supervision of Dr. Vasit Sagan.
+            <!-- Right Side: About Me -->
+            <div class="hero-right">
+                <h2 class="about-title">About Me</h2>
+                <div class="about-description">
+                    <p class="animated-text">
+                        Greetings! I am a Computer Science researcher specializing in <strong>Deep Learning</strong>, <strong>Computer Vision</strong>, and <strong>Geospatial AI</strong>. Currently pursuing my MSc. in Geographic Information Science at Saint Louis University, I work as a Research Assistant at the Taylor Geospatial Institute under Dr. Vasit Sagan.
                     </p>
-                    <p>
-                        My research focuses on developing innovative deep learning solutions for hyperspectral image analysis, particularly in precision agriculture and environmental monitoring. I am passionate about leveraging cutting-edge AI techniques to solve real-world problems in remote sensing and geospatial analysis.
+                    <p class="animated-text delay-1">
+                        My research focuses on developing novel <strong>transformer-based architectures</strong> for hyperspectral image analysis, with applications in precision agriculture and environmental monitoring. I leverage advanced machine learning techniques—including <strong>self-supervised learning</strong>, <strong>physics-informed neural networks</strong>, and <strong>multimodal fusion</strong>—to extract meaningful insights from high-dimensional remote sensing data.
                     </p>
-                    <p>
-                        With a strong foundation in computer science and a specialization in artificial intelligence, I combine theoretical knowledge with practical implementation to advance the field of geospatial machine learning. My work spans self-supervised learning, multimodal AI, and the development of transformer-based architectures for high-dimensional geospatial data.
+                    <p class="animated-text delay-2">
+                        With a strong foundation in AI and software engineering, I bridge the gap between theoretical computer science and real-world applications. My work spans cutting-edge areas including <strong>vision transformers</strong>, <strong>masked autoencoders</strong>, <strong>graph neural networks</strong>, and <strong>spatiotemporal modeling</strong> for geospatial data.
+                    </p>
+                    <p class="animated-text delay-3">
+                        I am passionate about pushing the boundaries of <strong>AI for Earth observation</strong>, developing scalable ML systems, and contributing to open-source scientific computing. Currently seeking PhD opportunities in Computer Science to advance research in deep learning and computer vision.
                     </p>
                 </div>
-                <div class="research-interests">
-                    <h3>Research Interests</h3>
-                    <ul>
-                        <li><i class="fas fa-check-circle"></i> Computer Vision</li>
-                        <li><i class="fas fa-check-circle"></i> Deep Learning</li>
-                        <li><i class="fas fa-check-circle"></i> Remote Sensing</li>
-                        <li><i class="fas fa-check-circle"></i> Multimodal AI</li>
-                        <li><i class="fas fa-check-circle"></i> Geospatial Machine Learning</li>
-                        <li><i class="fas fa-check-circle"></i> Geostatistics</li>
-                    </ul>
+
+                <div class="research-interests-inline">
+                    <h3><i class="fas fa-brain"></i> Research Interests</h3>
+                    <div class="interests-tags">
+                        <span class="interest-tag">Deep Learning</span>
+                        <span class="interest-tag">Computer Vision</span>
+                        <span class="interest-tag">Transformers</span>
+                        <span class="interest-tag">Remote Sensing</span>
+                        <span class="interest-tag">Multimodal AI</span>
+                        <span class="interest-tag">Self-Supervised Learning</span>
+                        <span class="interest-tag">Graph Neural Networks</span>
+                        <span class="interest-tag">Geospatial ML</span>
+                    </div>
                 </div>
             </div>
         </div>
