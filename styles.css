@@ -121,7 +121,7 @@ body {
 
 /* Hero-About Combined Section */
 .hero-about {
-    background: linear-gradient(135deg, var(--light-cream) 0%, var(--white) 100%);
+    background: linear-gradient(135deg, var(--light-green) 0%, var(--white) 100%);
     padding: 120px 0 80px;
     min-height: 100vh;
     display: flex;
