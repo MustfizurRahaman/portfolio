@@ -526,12 +526,12 @@ section {
 }
 
 .pub-authors strong {
-    color: var(--primary-green);
+    color: var(--duke_blue);
     font-weight: 600;
 }
 
 .pub-venue {
-    color: var(--primary-green);
+    color: var(--duke_blue);
     font-size: 0.9rem;
     font-weight: 600;
     margin-bottom: 0.8rem;
@@ -539,7 +539,7 @@ section {
 }
 
 .pub-link {
-    color: var(--primary-green);
+    color: var(--duke_blue);
     text-decoration: none;
     font-size: 0.9rem;
     font-weight: 600;
@@ -551,8 +551,8 @@ section {
 }
 
 .pub-link:hover {
-    color: var(--dark-green);
-    border-bottom: 1px solid var(--primary-green);
+    color: var(--duke_blue);
+    border-bottom: 1px solid var(--duke_blue);
 }
 
 .pub-link i {
@@ -592,7 +592,7 @@ section {
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    background-color: var(--primary-green);
+    background-color: var(--duke_blue);
     border: 4px solid var(--white);
     box-shadow: var(--shadow);
 }
@@ -618,7 +618,7 @@ section {
 }
 
 .experience-header h3 {
-    color: var(--primary-green);
+    color: var(--duke_blue);
     font-size: 1.4rem;
 }
 
@@ -629,7 +629,7 @@ section {
 }
 
 .experience-date {
-    color: var(--primary-green);
+    color: var(--duke_blue);
     font-weight: 600;
     white-space: nowrap;
 }
@@ -640,7 +640,7 @@ section {
 }
 
 .location i {
-    color: var(--primary-green);
+    color: var(--duke_blue);
 }
 
 .experience-content ul {
