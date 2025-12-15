@@ -13,7 +13,8 @@
     --dark-gray: #2c3e50;
     --text-color: #0a0a0a;
     --border-color: #e0e0e0;
-    --green-earth: #DADD98:
+    --green-earth: #DADD98;
+    --duke_blue: #012169:
     --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
@@ -432,7 +433,7 @@ section {
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    background-color: var(--primary-green);
+    background-color: var(--text-color);
     border: 4px solid var(--white);
     box-shadow: var(--shadow);
 }
@@ -458,7 +459,7 @@ section {
 }
 
 .timeline-header h3 {
-    color: var(--primary-green);
+    color: var(--duke_blue);
     font-size: 1.4rem;
 }
 
@@ -469,7 +470,7 @@ section {
 }
 
 .timeline-date {
-    color: var(--primary-green);
+    color: var(--text-color);
     font-weight: 600;
     white-space: nowrap;
 }
