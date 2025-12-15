@@ -187,7 +187,7 @@ body {
 }
 
 .lab-link {
-    color: var(--primary-green);
+    color: var(--duke_blue);
     text-decoration: none;
     font-weight: 600;
     transition: all 0.3s ease;
