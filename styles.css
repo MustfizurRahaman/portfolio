@@ -1,4 +1,5 @@
 /* Global Styles */
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400;500;600;700&display=swap');
 :root {
     --primary-green: #4A5D23;        /* Muted sage green */
     --light-green: #D4E4DD;          /* Very light sage */
@@ -159,10 +160,11 @@ body {
 }
 
 .name-title {
+    font-family: 'Edu NSW ACT Foundation', cursive;
     font-size: 2.5rem;
     color: var(--dark-gray);
     margin-bottom: 0.5rem;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .subtitle {
