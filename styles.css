@@ -759,7 +759,7 @@ section {
 }
 
 .skill-category h3 {
-    color: var(--primary-green);
+    color: var(--duke_blue);
     margin-bottom: 1.5rem;
     display: flex;
     align-items: center;
@@ -786,7 +786,7 @@ section {
 }
 
 .skill-tag:hover {
-    background-color: var(--primary-green);
+    background-color: var(--duke_blue);
     color: var(--white);
     transform: scale(1.05);
 }
