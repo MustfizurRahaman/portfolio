@@ -13,13 +13,13 @@
         <div class="container">
             <div class="nav-brand">Mustafizur Rahaman</div>
             <ul class="nav-menu">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#education" class="nav-link">Education</a></li>
-                <li><a href="#publications" class="nav-link">Publications</a></li>
-                <li><a href="#experience" class="nav-link">Experience</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#home" class="nav-link" data-section="home">Home</a></li>
+                <li><a href="#education" class="nav-link" data-section="education">Education</a></li>
+                <li><a href="#publications" class="nav-link" data-section="publications">Publications</a></li>
+                <li><a href="#experience" class="nav-link" data-section="experience">Experience</a></li>
+                <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+                <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+                <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
             </ul>
             <div class="hamburger">
                 <span></span>
@@ -30,7 +30,7 @@
     </nav>
 
     <!-- Hero/About Combined Section -->
-    <section id="home" class="hero-about">
+    <section id="home" class="hero-about content-section">
         <div class="hero-about-container">
             <!-- Left Side: Image + Intro -->
             <div class="hero-left">
@@ -46,7 +46,7 @@
                     <p class="affiliation">Saint Louis University</p>
                     
                     <div class="hero-buttons">
-                        <a href="#contact" class="btn btn-primary">Get in Touch</a>
+                        <a href="#contact" class="btn btn-primary" data-section="contact">Get in Touch</a>
                         <a href="assets/CV.pdf" class="btn btn-secondary" download>Download CV</a>
                     </div>
                     
@@ -54,7 +54,7 @@
                         <a href="mailto:mustafiz0905@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a>
                         <a href="https://github.com/MustfizurRahaman" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
                         <a href="https://www.linkedin.com/in/rahamanmustafizur/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://mustfizurrahaman.github.io/portfolio/" target="_blank" title="Google Sites"><i class="fas fa-globe"></i></a>
+                        <a href="https://x.com/mustafiz0905" target="_blank" title="X"><i class="fab fa-x-twitter"></i></a>
                         <a href="https://scholar.google.com/citations?user=IKh3eroAAAAJ&hl=en&authuser=1" target="_blank" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
                     </div>
                 </div>
@@ -65,12 +65,11 @@
                 <h2 class="about-title">About Me</h2>
                 <div class="about-description">
                     <p class="animated-text">
-                        <p>
-                            I'm neck-deep in <strong>Deep Learning</strong>, <strong>Computer Vision</strong>, and <strong>Geospatial AI</strong>, developing algorithms that make sense of hyperspectral imagery. 
-                            This data contains hundreds of spectral bands instead of the usual three. Yes, it's as chaotic as it sounds. 
-                            As a PhD researcher in Geo-Analytics, I work on <i>self-supervised learning</i>, <i>physics-informed neural networks</i>, and <i>multimodal fusion</i> to extract insights from high-dimensional remote sensing data for precision agriculture and environmental monitoring. The goal? Detecting problems before they're visible to the naked eye.
-                            Currently exploring <i>vision transformers</i>, <i>masked autoencoders</i>, <i>graph neural networks</i>, and <i>spatiotemporal modeling</i>. Also fascinated by <strong>foundation models</strong> and <strong>Earth embeddings</strong> because understanding the entire planet through AI seemed like a reasonable challenge.
-                        </p>
+                        I'm neck-deep in <strong>Deep Learning</strong>, <strong>Computer Vision</strong>, and <strong>Geospatial AI</strong>, developing algorithms that make sense of hyperspectral imagery. 
+                        This data contains hundreds of spectral bands instead of the usual three. Yes, it's as chaotic as it sounds. 
+                        As a PhD researcher in Geo-Analytics, I work on <i>self-supervised learning</i>, <i>physics-informed neural networks</i>, and <i>multimodal fusion</i> to extract insights from high-dimensional remote sensing data for precision agriculture and environmental monitoring. The goal? Detecting problems before they're visible to the naked eye.
+                        Currently exploring <i>vision transformers</i>, <i>masked autoencoders</i>, <i>graph neural networks</i>, and <i>spatiotemporal modeling</i>. Also fascinated by <strong>foundation models</strong> and <strong>Earth embeddings</strong> because understanding the entire planet through AI seemed like a reasonable challenge.
+                    </p>
                 </div>
 
                 <div class="research-interests-inline">
@@ -91,7 +90,7 @@
     </section>
 
     <!-- Education Section -->
-    <section id="education" class="education">
+    <section id="education" class="education content-section" style="display: none;">
         <div class="container">
             <h2 class="section-title">Education</h2>
             <div class="timeline">
@@ -124,7 +123,7 @@
     </section>
 
     <!-- Publications Section -->
-    <section id="publications" class="publications">
+    <section id="publications" class="publications content-section" style="display: none;">
         <div class="container">
             <h2 class="section-title">Publications</h2>
             <div class="publications-grid">
@@ -180,7 +179,7 @@
     </section>
 
     <!-- Experience Section -->
-    <section id="experience" class="experience">
+    <section id="experience" class="experience content-section" style="display: none;">
         <div class="container">
             <h2 class="section-title">Teaching & Research Experience</h2>
             <div class="experience-timeline">
@@ -267,7 +266,7 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="projects">
+    <section id="projects" class="projects content-section" style="display: none;">
         <div class="container">
             <h2 class="section-title">Featured Projects</h2>
             <div class="projects-grid">
@@ -332,7 +331,7 @@
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="skills">
+    <section id="skills" class="skills content-section" style="display: none;">
         <div class="container">
             <h2 class="section-title">Technical Skills</h2>
             <div class="skills-grid">
@@ -380,7 +379,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact">
+    <section id="contact" class="contact content-section" style="display: none;">
         <div class="container">
             <h2 class="section-title">Get in Touch</h2>
             <div class="contact-content">
@@ -392,20 +391,20 @@
                             <a href="mailto:mustafiz0905@gmail.com">mustafiz0905@gmail.com</a>
                         </div>
                     </div>
-                        <div class="contact-item">
-                            <i class="fab fa-linkedin"></i>
-                            <div>
-                                <h4>LinkedIn</h4>
-                                <a href="https://www.linkedin.com/in/rahamanmustafizur/" target="_blank">linkedin.com/in/your-linkedin-username</a>
-                            </div>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <div>
+                            <h4>LinkedIn</h4>
+                            <a href="https://www.linkedin.com/in/rahamanmustafizur/" target="_blank">linkedin.com/in/rahamanmustafizur</a>
                         </div>
-                        <div class="contact-item">
-                            <i class="fab fa-x-twitter"></i>
-                             <div>
-                                <h4>X (Twitter)</h4>
-                                 <a href="https://x.com/mustafiz0905" target="_blank">mustafiz0905</a>
-                             </div>
-                         </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-x-twitter"></i>
+                        <div>
+                            <h4>X (Twitter)</h4>
+                            <a href="https://x.com/mustafiz0905" target="_blank">@mustafiz0905</a>
+                        </div>
+                    </div>
                     <div class="contact-item">
                         <i class="fab fa-github"></i>
                         <div>
@@ -425,7 +424,8 @@
             <div class="footer-links">
                 <a href="mailto:mustafiz0905@gmail.com"><i class="fas fa-envelope"></i></a>
                 <a href="https://github.com/MustfizurRahaman" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://sites.google.com/view/mustafizur" target="_blank"><i class="fas fa-globe"></i></a>
+                <a href="https://www.linkedin.com/in/rahamanmustafizur/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://x.com/mustafiz0905" target="_blank"><i class="fab fa-x-twitter"></i></a>
             </div>
         </div>
     </footer>
