@@ -283,7 +283,7 @@ body {
 }
 
 .about-description strong {
-    color: var(--primary-green);
+    color: var(--dark-gray);
     font-weight: 600;
 }
 
