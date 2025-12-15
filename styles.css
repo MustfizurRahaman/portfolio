@@ -287,8 +287,8 @@ body {
 }
 
 .about-title {
-    
-    font-size: 2.2rem;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    font-size: 1.8rem;
     color: var(--dark-gray);
     margin-bottom: 1.5rem;
     font-weight: 700;
@@ -339,6 +339,7 @@ body {
 }
 
 .research-interests-inline h3 {
+    font-family: 'Edu NSW ACT Foundation', cursive;
     color: var(--primary-green);
     margin-bottom: 1.2rem;
     font-size: 1.3rem;
